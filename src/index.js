@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded',function (){
   const messageInput = document.getElementById('message-input')
   const chatContainer = document.getElementById('chat-container')
   const user = prompt("Who are you?????")
-  console.log(messageForm)
-  console.log(messageInput)
-  console.log(chatContainer)
 
   function fetchMessages() {
     console.log('fasdf')
@@ -44,15 +41,15 @@ document.addEventListener('DOMContentLoaded',function (){
     }
 
     fetch(messageCreateAddress,init)
-    // .then(r=>r.json())
-    // .then(data=>{
-    //   const messageLi = document.createElement('li')
-    //   // is message something that look like 'message' or '<li>messasge</li>'
-    //   messageLi.innerText=`${user}: ${data.message}`
-    //   console.log(messageLi)
-    //   chatContainer.appendChild(messageLi)
-    //   messageInput.value = ''
-    // })
+    .then(r=>r.json())
+    .then(data=>{
+      // const messageLi = document.createElement('li')
+      // // is message something that look like 'message' or '<li>messasge</li>'
+      // messageLi.innerText=`${user}: ${data.message}`
+      // console.log(messageLi)
+      // chatContainer.appendChild(messageLi)
+      messageInput.value = ''
+    })
 
 
     // Add message to DOM without sending
