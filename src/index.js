@@ -44,15 +44,15 @@ document.addEventListener('DOMContentLoaded',function (){
     }
 
     fetch(messageCreateAddress,init)
-    .then(r=>r.json())
-    .then(data=>{
-      const messageLi = document.createElement('li')
-      // is message something that look like 'message' or '<li>messasge</li>'
-      messageLi.innerText=`${user}: ${data.message}`
-      console.log(messageLi)
-      chatContainer.appendChild(messageLi)
-      messageInput.value = ''
-    })
+    // .then(r=>r.json())
+    // .then(data=>{
+    //   const messageLi = document.createElement('li')
+    //   // is message something that look like 'message' or '<li>messasge</li>'
+    //   messageLi.innerText=`${user}: ${data.message}`
+    //   console.log(messageLi)
+    //   chatContainer.appendChild(messageLi)
+    //   messageInput.value = ''
+    // })
 
 
     // Add message to DOM without sending
