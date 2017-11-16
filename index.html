@@ -3,15 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+      #container {
+        width: 600px;
+        margin:auto;
+      }
+      .others-message > p {
+        text-align: right;
+      }
+
+      .message {
+        margin:40px;
+      }
+
+      .message > p > span{
+        padding:10px;
+        border-radius: 5px;
+
+      }
+
+      .my-message > p > span{
+        color:black;
+        background:grey;
+      }
+
+      .my-message > p > span{
+        color:black;
+        background:blue;
+      }
+
+      #message-form {
+        margin-bottom:50px;
+      }
+    </style>
   </head>
   <body>
-    <form id="message-form">
-      <input id="message-input" type="text" name="" value="">
-      <button type="submit" name="button">Send message</button>
-    </form>
-    <div id="chat-frame">
-      <div id="chat-container">
-        <!-- <li>This is the message</li> -->
+    <div id="container">
+      <form id="message-form">
+        <input id="message-input" type="text" name="" value="">
+        <button id='send-message' type="submit" name="button"></button>
+      </form>
+      <div id="chat-frame">
+        <div id="chat-container">
+          <!-- <li>This is the message</li> -->
+        </div>
       </div>
     </div>
 
